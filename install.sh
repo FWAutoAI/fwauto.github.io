@@ -55,7 +55,7 @@ check_node() {
 install_fwauto() {
     info "Installing fwauto (this may take a while)..."
 
-    uv tool install --quiet --force --prerelease=allow fwauto
+    uv tool install --quiet --force fwauto
 
     info "fwauto installation complete"
 }

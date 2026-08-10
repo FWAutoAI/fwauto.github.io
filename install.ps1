@@ -50,7 +50,7 @@ function Test-Node {
 # Install fwauto
 function Install-FWAuto {
     Write-Info "Installing fwauto (this may take a while)..."
-    & uv tool install --quiet --force --prerelease=allow fwauto
+    & uv tool install --quiet --force fwauto
     if ($LASTEXITCODE -ne 0) { throw "fwauto installation failed" }
     Write-Info "fwauto installation complete"
 }
